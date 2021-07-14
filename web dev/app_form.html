@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application form</title>
+    <style>
+        body {
+            background-color: rgb(190, 235, 236);
+        }
+        
+        h1 {
+            color: blue;
+        }
+        
+        p {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        <h1><strong>International Student Application Form </strong></h1>
+    </p>
+    <p>
+        <h1><strong>forAdmission to Lambton Collage</strong></h1>
+    </p>
+    <p>Please submit form using one of the following methods:</p>
+    <p>Mail:&nbsp;&nbsp;&nbsp;International Education,Lambton Collage
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1457 London Road,</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sarnia,Ontario,Canada</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N7S 6K4</p>
+        <p>Lambton Collage recommends that students pay fees directly to our collage and not through an agent.</p>
+        <hr>
+        <h3><strong>1.Personal Information</strong></h3>
+        <form action="bakend.php">
+            Family Name(Last Name):&nbsp;&nbsp;<input type="text" name="Family Name(Last Name)" required><br> First & Middle Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="First & Middle Name" required><br> Date of Birth:
+            &nbsp;&nbsp;
+            <input type="date" name="Date of birth" id="Date of Birth" required><br> Sex: &nbsp;&nbsp;Male<input type="radio" name="Sex" required id="Male">Female<input type="radio" name="Sex" required id="Female"><br> Address:
+            <br>&nbsp;&nbsp;<textarea name="Address" id="Address" required cols="80" rows="10"></textarea><br> City/Town:&nbsp;&nbsp;
+            <input type="text" name="City/Town" required><br> Province/State:&nbsp;&nbsp;
+            <input type="text" name="Province/State" id="Province/State" required><br> Postal Code/Zip:&nbsp;&nbsp;<input type="number" name="Pin Code" id="Pin Code" required><br> Country:&nbsp;&nbsp; <input type="text" name="Country" id="Country" required><br>            Country of Citizenship:&nbsp;&nbsp;<input type="text" name="Country of Citizenship" id="Country of Citizenship" required><br> Contact Number:&nbsp;&nbsp;<input type="text" name="Contact Number" id="Contact Number" required><br> Email Address:&nbsp;&nbsp;
+            <input type="email" name="Email Address" id="Email Address" required><br> Upload your marksheet<input type="file" name="Upload your  marksheet" id="marksheet">
+            <hr>
+            <h3><strong>2. Campus Choice</strong></h3>
+            <select name="campus Choice" id="Campus Choice" required>
+      <option value="">--Select Campus Choice--</option>
+      <option value="">Main Campus</option>
+      <option value="">2nd Main campus</option>
+      <option value="">Ghatiya Wala Campus</option>
+  </select>
+            <hr>
+            <h3><strong>Education</strong></h3>
+            <P>Wahi to lene Collage aa rhe hain</P>
+            <div><input type="submit" value="Fill kr liye ho to submit bhi kr do"><br>
+            </div>
+            <div><input type="reset" value="Fir se bhrne ka mn kr rha hai"><br></div>
+        </form>
+</body>
+
+</html>
